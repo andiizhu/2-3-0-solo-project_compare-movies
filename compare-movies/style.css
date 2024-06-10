@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+form {
+  border: 2px solid black;
+  border-radius: .5rem;
+  padding: 1rem;
+}
+li {
+  border: 2px solid black;
+  list-style: none;
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+#movies-list {
+  display: grid;
+  background-color: aqua;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows: auto;
+  gap: 1rem;
+  border: 2px solid black;
+  padding: 1rem;
+  border-radius: .25rem;;
+}
+
+.h3 {
+  padding-bottom: .5rem;
+}

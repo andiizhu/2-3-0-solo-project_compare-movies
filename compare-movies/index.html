@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compare Movies</title>
+  </head>
+  <body>
+    <main>
+        <div id="app"></div>
+        <h1>Movies</h1>
+        <section>
+          <form aria-labelled="add-new-movie">
+            <h2 id="add-new-movie">Add Your Movie</h2>
+            <div>
+              <label for="movie-title-input">Movie Title:</label>
+              <input type="text" id="movie-title-input" name="title" required>
+            </div>
+            <div>
+              <label for="critic-score-input">Critic Score:</label>
+              <input type="number" id="critic-score-input" name="criticScore" required>
+            </div>
+            <div>
+              <label for="audience-score-input">Audience:</label>
+              <input type="number" id="audience-score-input" name="audienceScore" required>
+            </div>
+            <div>
+              <label for="domestic-gross-sales-input">Domestic Gross Sales:</label>
+              <input type="number" id="domestic-gross-sales-input" name="domestic" required>
+            </div>
+            <label for="genre-input">Genre:</label>
+            <select name="genre" id="genre-input" required>
+                <option value="" disabled selected>Select a genre</option>
+                <option value="Action">Action</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Drama">Drama</option>
+                <option value="Horror">Horror</option>
+                <option value="Concert">Concert</option>
+                <option value="Documentary">Documentary</option>
+                <option value="Musical">Musical</option>
+                <option value="Romance">Romance</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+                <option value="Thriller">Thriller</option>
+            </select>
+            <div>
+              <button>Add Movie</button>
+            </div>
+          </form>
+        </section>
+        <section>
+          <ul id="movies-list"></ul>>
+        </section>
+        <section>
+          <button type="submit" id="default-movies">Go Back To Default Movies</button>
+        </section>
+        <section>
+          <h2>Domestic Box Office</h2>
+          <canvas id="bar-chart"></canvas>
+        </section>
+        <section>
+          <h2>Domestic Box Office by Genre</h2>
+          <canvas id="doughtnut-chart"></canvas>
+        </section>
+        <section>
+          <h2>Critic Score vs Audience Score</h2>
+          <canvas id="scatterplot"></canvas>
+        </section>
+        <script type="module" src="/main.js"></script>
+        <div>
+          <canvas id="myChart"></canvas>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     </main>
+  </body>
+</html>
